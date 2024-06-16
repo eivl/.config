@@ -1,0 +1,155 @@
+function temp_fix_path {
+    $env:Path = [System.Environment]::GetEnvironmentVariable("Path", 'User') + ';' + [System.Environment]::GetEnvironmentVariable("Path", 'Machine') + ';' + [System.Environment]::GetEnvironmentVariable("Path")
+}
+
+winget import --import-file "winstall-5644.json" --no-upgrade --accept-package-agreements --accept-source-agreements
+# > $null
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path", 'User') + ';' + [System.Environment]::GetEnvironmentVariable("Path", 'Machine') + ';' + [System.Environment]::GetEnvironmentVariable("Path")
+
+Function Test-ScoopInstalled {
+    $scoopExists = Get-Command scoop -ErrorAction SilentlyContinue
+    return $scoopExists -ne $null
+}
+
+if (-NOT (Test-ScoopInstalled)) {
+    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+    Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+
+    # Install aria2c for multi-connection downloads
+    scoop install aria2 -u
+    scoop config aria2-warning-enabled false
+
+    # Install buckets
+    scoop bucket add extras
+    scoop bucket add nirsoft
+    scoop bucket add sysinternals
+
+# Update scoop
+scoop update *
+
+# Install packages
+$packages = @(
+    'uutils-coreutils'
+    'bat'
+    'bind'
+    'broot'
+    'clink'
+    'curl'
+    'delta'
+    'diffutils'
+    'dos2unix'
+    'dust'
+    'eza'
+    'fastfetch'
+    'fd'
+    'file'
+    'findutils'
+    'fzf'
+    'gh'
+    'git-crypt'
+    'glow'
+    'grep'
+    'iperf3'
+    'jq'
+    'less'
+    'lf'
+    'mediainfo'
+    'rclone'
+    'ripgrep'
+    'scoop-search'
+    'sed'
+    'spotify-tui'
+    'starship'
+    'sysinternals/autoruns'
+    'sysinternals/psexec'
+    'sysinternals/psshutdown'
+    'sysinternals/regjump'
+    'sysinternals/sdelete'
+    'touch'
+    'tre-command'
+    'unzip'
+    'wakemeonlan'
+    'wget'
+    'whois'
+    'zoxide'
+    'pipx'
+)
+
+
+foreach ($package in $packages) {
+    scoop install $package -u
+}
+
+}
+
+# Reset shims in order of package list
+# if scoop was already installed
+# if (Test-ScoopInstalled) {
+#     foreach ($package in $packages) {
+#         scoop reset $package
+#     }
+# }
+
+function Check-GitHubAuthStatus {
+      $result = gh auth status
+      if ($result -like "*Logged in*") {
+          Write-Host "GitHub CLI is authenticated and logged in."
+      }
+      else {
+          Write-Host "GitHub CLI is not authenticated or not logged in."
+          gh auth login --web --git-protocol ssh
+      }
+  }
+function Install-GitHubExtension {
+      param (
+          [string]$extensionName
+      )
+
+      # Install the GitHub extension using the GitHub CLI
+      gh extension install $extensionName
+  }
+function Get-GitHubExtension {
+      $extensions = gh extension list
+      return $extensions
+  }
+
+function CheckGitHubExtensions {
+      $requiredExtensions = @(
+        'github/gh-copilot'
+        'dlvhdr/gh-dash'
+        )
+
+      $installedExtensions = Get-GitHubExtension
+
+      foreach ($extension in $requiredExtensions) {
+          if ([string]$installedExtensions -NotMatch $extension) {
+              Install-GitHubExtension $extension
+	      $installedExtensions = Get-GitHubExtension
+         }
+      }
+  }
+
+CheckGitHubExtensions
+
+if (Test-PATH $PROFILE) {
+    if (-not (Get-Content -Raw -Path $PROFILE)){
+        Add-Content -Path $PROFILE -Value "Import-Module $HOME/.config/PowerShell/Microsoft.PowerShell_profile.ps1"
+        . $PROFILE
+        
+    } 
+}
+else {
+    New-Item -ItemType File -Force -Path $PROFILE
+    Add-Content -Path $PROFILE -Value "Import-Module $HOME/.config/PowerShell/Microsoft.PowerShell_profile.ps1"
+    . $PROFILE
+}
+
+# Restart terminal commands
+
+Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1" -OutFile "./install-pyenv-win.ps1"; &"./install-pyenv-win.ps1"
+pipx ensurepath
+temp_fix_path
+[System.Environment]::SetEnvironmentVariable('PYENV',$env:USERPROFILE + "\.pyenv\pyenv-win\","User")
+[System.Environment]::SetEnvironmentVariable('PYENV_ROOT',$env:USERPROFILE + "\.pyenv\pyenv-win\","User")
+[System.Environment]::SetEnvironmentVariable('PYENV_HOME',$env:USERPROFILE + "\.pyenv\pyenv-win\","User")
+pipx install poetry

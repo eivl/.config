@@ -1,0 +1,73 @@
+{
+  "$schema": "https://aka.ms/winget-packages.schema.1.0.json",
+  "WinGetVersion": "0.3.11201",
+  "Sources": [
+    {
+      "Packages": [
+        {
+          "Id": "ShareX.ShareX",
+        },
+        {
+          "Id": "Valve.Steam",
+        },
+        {
+          "Id": "Discord.Discord",
+        },
+        {
+          "Id": "EpicGames.EpicGamesLauncher",
+        },
+        {
+          "Id": "Git.Git",
+        },
+	{
+          "Id": "Google.Chrome",
+        },
+        {
+          "Id": "Microsoft.PowerShell",
+        },
+        {
+          "Id": "SlackTechnologies.Slack",
+        },
+        {
+          "Id": "Microsoft.Teams",
+        },
+        {
+          "Id": "Microsoft.PowerToys",
+        },
+        {
+          "Id": "Twilio.Authy",
+        },
+        {
+          "Id": "Nvidia.CUDA",
+        },
+        {
+          "Id": "WowUp.Wowup",
+        },
+        {
+          "Id": "Nvidia.CUDA",
+        },
+        {
+          "Id": "Nvidia.CUDA",
+        },
+        {
+          "Id": "Nvidia.CUDA",
+        },
+        {
+          "Id": "Nvidia.CUDA",
+        },
+        {
+          "Id": "Nvidia.CUDA",
+        },
+        {
+          "Id": "Nvidia.CUDA",
+        },
+      ],
+      "SourceDetails": {
+        "Argument": "https://winget.azureedge.net/cache",
+        "Identifier": "Microsoft.Winget.Source_8wekyb3d8bbwe",
+        "Name": "winget",
+        "Type": "Microsoft.PreIndexed.Package"
+      }
+    }
+  ]
+}
