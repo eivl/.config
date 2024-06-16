@@ -21,6 +21,7 @@ if (-NOT (Test-ScoopInstalled)) {
 
     # Install buckets
     scoop bucket add extras
+    scoop bucket add nerd-fonts
     scoop bucket add nirsoft
     scoop bucket add sysinternals
 
@@ -44,12 +45,14 @@ $packages = @(
     'fd'
     'file'
     'findutils'
+    'FiraCode'
     'fzf'
     'gh'
     'git-crypt'
     'glow'
     'grep'
     'iperf3'
+    'JetBrains-Mono'
     'jq'
     'less'
     'lf'
@@ -128,7 +131,8 @@ function CheckGitHubExtensions {
          }
       }
   }
-
+git config --global user.email "eivind.teig@gmail.com"
+git config --global user.name "Eivind Teig"
 CheckGitHubExtensions
 
 if (Test-PATH $PROFILE) {
