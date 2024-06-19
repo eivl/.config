@@ -54,9 +54,11 @@ $packages = @(
     'iperf3'
     'JetBrains-Mono'
     'jq'
+    'kubectl'
     'less'
     'lf'
     'mediainfo'
+    'ngrok'
     'rclone'
     'ripgrep'
     'scoop-search'
@@ -161,4 +163,17 @@ pipx install poetry
 
 & $env:Temp\GoogleCloudSDKInstaller.exe
 temp_fix_path
-wsl --install    
+
+
+# CHECK IF WSL IS INSTALLED
+wsl --install
+Write-Host "YOU HAVE TO REBOOT NOW"    
+# Invoke-WebRequest -Uri 'https://desktop.docker.com/win/stable/Docker%20Desktop%20Installer.exe' -OutFile "$env:Temp\DockerDesktopInstaller.exe"
+# Start-Process $env:Temp\DockerDesktopInstaller.exe -Wait -ArgumentList 'install', '--quiet', '--accept-license'
+Write-Host "YOU HAVE TO START DOCKER MANUALLY THE FIRST TIME" 
+
+function afterDocker {
+    gcloud auth login
+    gcloud auth configure-docker
+    docker pull eu.gcr.io/amedia-core/amedia/debug:latest
+}
