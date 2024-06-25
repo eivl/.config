@@ -32,6 +32,7 @@ scoop update *
 # Install packages
 $packages = @(
     'uutils-coreutils'
+    'autohotkey'
     'bat'
     'bind'
     'broot'
@@ -55,6 +56,7 @@ $packages = @(
     'iperf3'
     'JetBrains-Mono'
     'jq'
+    'komorebi'
     'kubectl'
     'less'
     'lf'
@@ -76,6 +78,7 @@ $packages = @(
     'unzip'
     'wakemeonlan'
     'wget'
+    'whkd'
     'whois'
     'zoxide'
     'pipx'
