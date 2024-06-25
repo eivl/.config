@@ -1,6 +1,7 @@
 function temp_fix_path {
     $env:Path = [System.Environment]::GetEnvironmentVariable("Path", 'User') + ';' + [System.Environment]::GetEnvironmentVariable("Path", 'Machine') + ';' + [System.Environment]::GetEnvironmentVariable("Path")
 }
+Start-Process powershell -Verb RunAs -ArgumentList "-NoExit -Command Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -Value 1"
 
 winget import --import-file "winstall-5644.json" --no-upgrade --accept-package-agreements --accept-source-agreements
 # > $null
