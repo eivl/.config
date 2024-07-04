@@ -49,6 +49,7 @@ $packages = @(
     'findutils'
     'FiraCode'
     'fzf'
+    'fx'
     'gh'
     'git-crypt'
     'glow'
@@ -61,6 +62,7 @@ $packages = @(
     'less'
     'lf'
     'mediainfo'
+    'neovim'
     'ngrok'
     'rclone'
     'ripgrep'
@@ -82,6 +84,7 @@ $packages = @(
     'whois'
     'zoxide'
     'pipx'
+    'extras/vcredist2022'
 )
 
 

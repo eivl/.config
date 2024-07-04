@@ -7,6 +7,9 @@
         {
           "Id": "Overwolf.CurseForge",
         },
+	{
+	  "Id": "Obsidian.Obsidian",
+	},
       ],
       "SourceDetails": {
         "Argument": "https://winget.azureedge.net/cache",
