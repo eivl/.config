@@ -8,5 +8,9 @@ function explain {
       Invoke-Expression $command
   }
 
+function gcloud_auth {
+    Start-Process pwsh -ArgumentList '-Command "gcloud auth print-access-token"' -Verb runAs
+}
+
 
 Invoke-Expression (&starship init powershell)
