@@ -12,5 +12,5 @@ function gcloud_auth {
     Start-Process pwsh -ArgumentList '-Command "gcloud auth print-access-token"' -Verb runAs
 }
 
-
+Invoke-Expression (& { (zoxide init --cmd cd powershell | Out-String) })
 Invoke-Expression (&starship init powershell)
