@@ -5,8 +5,9 @@
 
 }
 .bar {
-    background-color: rgba(255, 255, 255, 0.062);
+    background-color: rgba(255, 255, 255, 1);
     padding: 0 8px; 
+    border-radius: 8px;
 }
 .container-left,
 .container-center,
