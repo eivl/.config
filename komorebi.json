@@ -57,5 +57,11 @@
         }
       ]
     }
+  ],
+  "float_rules": [
+    {
+      "kind": "Exe",
+      "id": "mpv.exe"
+    }
   ]
 }
