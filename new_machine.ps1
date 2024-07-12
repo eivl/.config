@@ -45,6 +45,7 @@ $packages = @(
     'eza'
     'fastfetch'
     'fd'
+    'ffmpeg'
     'file'
     'findutils'
     'FiraCode'
@@ -165,7 +166,7 @@ temp_fix_path
 [System.Environment]::SetEnvironmentVariable('PYENV',$env:USERPROFILE + "\.pyenv\pyenv-win\","User")
 [System.Environment]::SetEnvironmentVariable('PYENV_ROOT',$env:USERPROFILE + "\.pyenv\pyenv-win\","User")
 [System.Environment]::SetEnvironmentVariable('PYENV_HOME',$env:USERPROFILE + "\.pyenv\pyenv-win\","User")
-pipx install poetry
+pipx install poetry ruff "black[d]"
 (New-Object Net.WebClient).DownloadFile("https://dl.google.com/dl/cloudsdk/channels/rapid/GoogleCloudSDKInstaller.exe", "$env:Temp\GoogleCloudSDKInstaller.exe")
 
 & $env:Temp\GoogleCloudSDKInstaller.exe
