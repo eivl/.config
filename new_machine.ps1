@@ -49,6 +49,7 @@ $packages = @(
     'file'
     'findutils'
     'FiraCode'
+    'FiraCode-NF-Mono'
     'fzf'
     'fx'
     'gh'
