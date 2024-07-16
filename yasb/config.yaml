@@ -267,9 +267,9 @@ widgets:
       class_name: "system-widget"
       apps:
         app1: ["\uf489","wt"]
-        app2: ["\udb82\ude1e","code"]
-        app3: ["\uf413","explorer c:\\Users\\amn"]
-        app5: ["\uf42f","C:\\Program Files\\Microsoft Office\\root\\Office16\\OUTLOOK.EXE"]
+        app2: ["\ued1b","pycharm64"]
+        app3: ["\uf413","explorer C:\\Users\\eivin"]
+        app5: ["\uf42f",'"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe" /newtab mail.google.com']
         app6: ["\uf0a2","notification_center"]
         app7: ["\ueb51","quick_settings"]
         app8: ["\uf46a","cmd.exe /c start ms-settings:windowsupdate"]
