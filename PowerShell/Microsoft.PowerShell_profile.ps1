@@ -12,5 +12,10 @@ function gcloud_auth {
     Start-Process pwsh -ArgumentList '-Command "gcloud auth print-access-token"' -Verb runAs
 }
 
+function restart_tb {
+    ps pythonw -ErrorAction SilentlyContinue | ForEach-Object {kill $_.Id}
+    C:\Users\eivin\yasb\.venv\Scripts\pythonw.exe C:\Users\eivin\yasb\src\main.py
+}
+
 Invoke-Expression (& { (zoxide init --cmd cd powershell | Out-String) })
 Invoke-Expression (&starship init powershell)
