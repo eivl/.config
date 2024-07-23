@@ -17,5 +17,7 @@ function restart_tb {
     C:\Users\eivin\yasb\.venv\Scripts\pythonw.exe C:\Users\eivin\yasb\src\main.py
 }
 
+
+Import-Module ZLocation
 Invoke-Expression (& { (zoxide init --cmd cd powershell | Out-String) })
 Invoke-Expression (&starship init powershell)

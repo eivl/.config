@@ -1,13 +1,101 @@
-2024-07-20 23:23:09 INFO log.py: Yasb - Yet Another Status Bar
-2024-07-20 23:23:10 DEBUG __init__.py: CoInitializeEx(None, 2)
-2024-07-20 23:23:10 INFO weather.py: Fetched new weather data at 2024-07-20 23:23:10.934257
-2024-07-20 23:23:11 DEBUG unknwn.py: Release <POINTER(IMMDeviceEnumerator) ptr=0x2085fdde7b0 at 2086122a250>
-2024-07-20 23:23:11 DEBUG win32.py: Looking up time zone info from registry
-2024-07-20 23:23:12 INFO bar_manager.py: Starting KomorebiEventListener...
-2024-07-20 23:23:12 INFO bar_manager.py: Starting SystemEventListener...
-2024-07-20 23:23:12 INFO event_listener.py: Created named pipe yasb-4503d9ba-46de-11ef-b6c3-bc091b0e5cee
-2024-07-20 23:23:12 INFO event_listener.py: Waiting for Komorebi to subscribe to named pipe yasb-4503d9ba-46de-11ef-b6c3-bc091b0e5cee
-2024-07-20 23:23:12 INFO watcher.py: Created file watcher for path C:\Users\eivin\.config\yasb
-2024-07-20 23:23:12 INFO event_listener.py: Komorebi connected to named pipe: yasb-4503d9ba-46de-11ef-b6c3-bc091b0e5cee
-2024-07-20 23:23:13 INFO weather.py: Fetched new weather data at 2024-07-20 23:23:13.141056
-2024-07-20 23:23:13 INFO weather.py: Fetched new weather data at 2024-07-20 23:23:13.290256
+2024-07-22 23:58:21 INFO log.py: Yasb - Yet Another Status Bar
+2024-07-22 23:58:22 DEBUG __init__.py: CoInitializeEx(None, 2)
+2024-07-22 23:58:22 DEBUG unknwn.py: Release <POINTER(IMMDeviceEnumerator) ptr=0x177b61d81e0 at 177b74be250>
+2024-07-22 23:58:22 DEBUG win32.py: Looking up time zone info from registry
+2024-07-22 23:58:22 INFO weather.py: Fetched new weather data at 2024-07-22 23:58:22.758107
+2024-07-22 23:58:23 INFO weather.py: Fetched new weather data at 2024-07-22 23:58:23.726948
+2024-07-22 23:58:23 INFO bar_manager.py: Starting KomorebiEventListener...
+2024-07-22 23:58:23 INFO bar_manager.py: Starting SystemEventListener...
+2024-07-22 23:58:23 INFO event_listener.py: Created named pipe yasb-8429ccab-4875-11ef-a488-bc091b0e5cee
+2024-07-22 23:58:23 INFO event_listener.py: Waiting for Komorebi to subscribe to named pipe yasb-8429ccab-4875-11ef-a488-bc091b0e5cee
+2024-07-22 23:58:23 INFO watcher.py: Created file watcher for path C:\Users\eivin\.config\yasb
+2024-07-22 23:58:23 INFO event_listener.py: Komorebi connected to named pipe: yasb-8429ccab-4875-11ef-a488-bc091b0e5cee
+2024-07-22 23:58:23 INFO weather.py: Fetched new weather data at 2024-07-22 23:58:23.970399
+2024-07-23 18:03:59 WARNING weather.py: Failed to retrieve weather info
+2024-07-23 18:03:59 WARNING weather.py: Failed to retrieve weather info
+2024-07-23 18:03:59 WARNING weather.py: Failed to retrieve weather info
+2024-07-23 18:17:39 INFO bar_manager.py: Screens updated. Re-initialising all bars.
+2024-07-23 18:17:39 INFO bar_manager.py: Stopping KomorebiEventListener...
+2024-07-23 18:17:39 INFO event_listener.py: Attempting to reconnect...
+2024-07-23 18:17:40 INFO bar_manager.py: Stopping SystemEventListener...
+2024-07-23 18:17:45 INFO bar_manager.py: Starting KomorebiEventListener...
+2024-07-23 18:17:45 INFO bar_manager.py: Starting SystemEventListener...
+2024-07-23 18:17:48 INFO event_listener.py: Created named pipe yasb-18b1fc03-490f-11ef-9bb1-bc091b0e5cee
+2024-07-23 18:17:48 INFO event_listener.py: Waiting for Komorebi to subscribe to named pipe yasb-18b1fc03-490f-11ef-9bb1-bc091b0e5cee
+2024-07-23 18:17:48 INFO bar_manager.py: Screens updated. Re-initialising all bars.
+2024-07-23 18:17:48 INFO bar_manager.py: Stopping KomorebiEventListener...
+2024-07-23 18:17:48 INFO weather.py: Fetched new weather data at 2024-07-23 18:17:48.653275
+2024-07-23 18:17:48 INFO weather.py: Fetched new weather data at 2024-07-23 18:17:48.707277
+2024-07-23 18:17:49 INFO bar_manager.py: Stopping SystemEventListener...
+2024-07-23 18:17:49 INFO event_listener.py: Komorebi connected to named pipe: yasb-18b1fc03-490f-11ef-9bb1-bc091b0e5cee
+2024-07-23 18:17:49 INFO event_listener.py: Attempting to reconnect...
+2024-07-23 18:17:49 INFO weather.py: Fetched new weather data at 2024-07-23 18:17:49.806147
+2024-07-23 18:17:49 INFO bar_manager.py: Starting KomorebiEventListener...
+2024-07-23 18:17:49 INFO bar_manager.py: Starting SystemEventListener...
+2024-07-23 18:17:49 INFO event_listener.py: Created named pipe yasb-1b123219-490f-11ef-b55c-bc091b0e5cee
+2024-07-23 18:17:49 INFO event_listener.py: Waiting for Komorebi to subscribe to named pipe yasb-1b123219-490f-11ef-b55c-bc091b0e5cee
+2024-07-23 18:17:49 INFO weather.py: Fetched new weather data at 2024-07-23 18:17:49.969912
+2024-07-23 18:17:50 INFO event_listener.py: Komorebi connected to named pipe: yasb-1b123219-490f-11ef-b55c-bc091b0e5cee
+2024-07-23 18:17:50 INFO bar.py: Screen geometry changed. Updating position for bar (status-bar_LC27G5xT_84c10872)
+2024-07-23 18:17:50 INFO weather.py: Fetched new weather data at 2024-07-23 18:17:50.060940
+2024-07-23 18:17:50 INFO bar.py: Screen geometry changed. Updating position for bar (status-bar_AG322QWG4_388858d9)
+2024-07-23 18:19:36 INFO bar_manager.py: Screens updated. Re-initialising all bars.
+2024-07-23 18:19:36 INFO bar_manager.py: Stopping KomorebiEventListener...
+2024-07-23 18:19:36 INFO event_listener.py: Attempting to reconnect...
+2024-07-23 18:19:37 INFO bar_manager.py: Stopping SystemEventListener...
+2024-07-23 18:19:40 INFO bar_manager.py: Starting KomorebiEventListener...
+2024-07-23 18:19:40 INFO bar_manager.py: Starting SystemEventListener...
+2024-07-23 18:19:44 INFO event_listener.py: Created named pipe yasb-5ce11814-490f-11ef-a23b-bc091b0e5cee
+2024-07-23 18:19:44 INFO event_listener.py: Waiting for Komorebi to subscribe to named pipe yasb-5ce11814-490f-11ef-a23b-bc091b0e5cee
+2024-07-23 18:19:44 INFO bar_manager.py: Screens updated. Re-initialising all bars.
+2024-07-23 18:19:44 INFO bar_manager.py: Stopping KomorebiEventListener...
+2024-07-23 18:19:44 INFO weather.py: Fetched new weather data at 2024-07-23 18:19:44.433316
+2024-07-23 18:19:44 INFO weather.py: Fetched new weather data at 2024-07-23 18:19:44.475316
+2024-07-23 18:19:44 INFO event_listener.py: Komorebi connected to named pipe: yasb-5ce11814-490f-11ef-a23b-bc091b0e5cee
+2024-07-23 18:19:44 INFO event_listener.py: Attempting to reconnect...
+2024-07-23 18:19:44 INFO bar_manager.py: Stopping SystemEventListener...
+2024-07-23 18:19:45 INFO weather.py: Fetched new weather data at 2024-07-23 18:19:45.651790
+2024-07-23 18:19:45 INFO bar_manager.py: Starting KomorebiEventListener...
+2024-07-23 18:19:45 INFO bar_manager.py: Starting SystemEventListener...
+2024-07-23 18:19:45 INFO event_listener.py: Created named pipe yasb-6010aeed-490f-11ef-b4d9-bc091b0e5cee
+2024-07-23 18:19:45 INFO event_listener.py: Waiting for Komorebi to subscribe to named pipe yasb-6010aeed-490f-11ef-b4d9-bc091b0e5cee
+2024-07-23 18:19:45 INFO weather.py: Fetched new weather data at 2024-07-23 18:19:45.770818
+2024-07-23 18:19:45 INFO weather.py: Fetched new weather data at 2024-07-23 18:19:45.803820
+2024-07-23 18:19:45 INFO event_listener.py: Komorebi connected to named pipe: yasb-6010aeed-490f-11ef-b4d9-bc091b0e5cee
+2024-07-23 18:49:46 INFO weather.py: Fetched new weather data at 2024-07-23 18:49:46.197763
+2024-07-23 18:49:46 INFO weather.py: Fetched new weather data at 2024-07-23 18:49:46.279317
+2024-07-23 18:49:46 INFO weather.py: Fetched new weather data at 2024-07-23 18:49:46.843234
+2024-07-23 19:19:46 INFO weather.py: Fetched new weather data at 2024-07-23 19:19:46.248501
+2024-07-23 19:19:46 INFO weather.py: Fetched new weather data at 2024-07-23 19:19:46.306520
+2024-07-23 19:19:46 INFO weather.py: Fetched new weather data at 2024-07-23 19:19:46.360614
+2024-07-23 19:49:46 INFO weather.py: Fetched new weather data at 2024-07-23 19:49:46.353389
+2024-07-23 19:49:46 INFO weather.py: Fetched new weather data at 2024-07-23 19:49:46.469964
+2024-07-23 19:49:48 INFO weather.py: Fetched new weather data at 2024-07-23 19:49:48.109607
+2024-07-23 20:19:46 INFO weather.py: Fetched new weather data at 2024-07-23 20:19:46.486875
+2024-07-23 20:19:46 INFO weather.py: Fetched new weather data at 2024-07-23 20:19:46.624945
+2024-07-23 20:19:47 INFO weather.py: Fetched new weather data at 2024-07-23 20:19:47.117379
+2024-07-23 20:38:26 INFO bar_manager.py: Screens updated. Re-initialising all bars.
+2024-07-23 20:38:26 INFO bar_manager.py: Stopping KomorebiEventListener...
+2024-07-23 20:38:26 INFO event_listener.py: Attempting to reconnect...
+2024-07-23 20:38:27 INFO bar_manager.py: Stopping SystemEventListener...
+2024-07-23 20:38:31 INFO bar_manager.py: Starting KomorebiEventListener...
+2024-07-23 20:38:31 INFO bar_manager.py: Starting SystemEventListener...
+2024-07-23 20:38:35 INFO event_listener.py: Created named pipe yasb-c294022f-4922-11ef-874b-bc091b0e5cee
+2024-07-23 20:38:35 INFO event_listener.py: Waiting for Komorebi to subscribe to named pipe yasb-c294022f-4922-11ef-874b-bc091b0e5cee
+2024-07-23 20:38:35 INFO bar_manager.py: Screens updated. Re-initialising all bars.
+2024-07-23 20:38:35 INFO bar_manager.py: Stopping KomorebiEventListener...
+2024-07-23 20:38:35 INFO weather.py: Fetched new weather data at 2024-07-23 20:38:35.419921
+2024-07-23 20:38:35 INFO weather.py: Fetched new weather data at 2024-07-23 20:38:35.440921
+2024-07-23 20:38:35 INFO event_listener.py: Komorebi connected to named pipe: yasb-c294022f-4922-11ef-874b-bc091b0e5cee
+2024-07-23 20:38:35 INFO bar_manager.py: Stopping SystemEventListener...
+2024-07-23 20:38:35 INFO event_listener.py: Attempting to reconnect...
+2024-07-23 20:38:36 INFO weather.py: Fetched new weather data at 2024-07-23 20:38:36.650999
+2024-07-23 20:38:36 INFO weather.py: Fetched new weather data at 2024-07-23 20:38:36.691509
+2024-07-23 20:38:36 INFO bar_manager.py: Starting KomorebiEventListener...
+2024-07-23 20:38:36 INFO bar_manager.py: Starting SystemEventListener...
+2024-07-23 20:38:36 INFO event_listener.py: Created named pipe yasb-c5bdde0d-4922-11ef-9c05-bc091b0e5cee
+2024-07-23 20:38:36 INFO event_listener.py: Waiting for Komorebi to subscribe to named pipe yasb-c5bdde0d-4922-11ef-9c05-bc091b0e5cee
+2024-07-23 20:38:36 INFO event_listener.py: Komorebi connected to named pipe: yasb-c5bdde0d-4922-11ef-9c05-bc091b0e5cee
+2024-07-23 20:38:36 INFO weather.py: Fetched new weather data at 2024-07-23 20:38:36.856544
+2024-07-23 20:38:36 INFO bar.py: Screen geometry changed. Updating position for bar (status-bar_LC27G5xT_50918f8a)
+2024-07-23 20:38:36 INFO bar.py: Screen geometry changed. Updating position for bar (status-bar_AG322QWG4_cd856e40)

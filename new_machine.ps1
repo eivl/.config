@@ -7,6 +7,9 @@ winget import --import-file "winstall-5644.json" --no-upgrade --accept-package-a
 # > $null
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path", 'User') + ';' + [System.Environment]::GetEnvironmentVariable("Path", 'Machine') + ';' + [System.Environment]::GetEnvironmentVariable("Path")
 
+Start-Process pwsh -ArgumentList '-Command "Install-Module ZLocation -Scope CurrentUser -AcceptLicense -Force"'
+
+
 Function Test-ScoopInstalled {
     $scoopExists = Get-Command scoop -ErrorAction SilentlyContinue
     return $scoopExists -ne $null
@@ -94,6 +97,7 @@ foreach ($package in $packages) {
     scoop install $package -u
 }
 
+
 }
 
 # Reset shims in order of package list
@@ -172,6 +176,10 @@ pipx install poetry ruff "black[d]"
 
 & $env:Temp\GoogleCloudSDKInstaller.exe
 temp_fix_path
+
+
+
+
 
 
 # CHECK IF WSL IS INSTALLED
