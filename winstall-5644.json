@@ -53,7 +53,7 @@
           "Id": "Alacritty.Alacritty",
         },
         {
-	  "Id": "Nvidia.CUDA",
+	  "Id": "Ollama.Ollama",
         },
         {
           "Id": "Nvidia.CUDA",
