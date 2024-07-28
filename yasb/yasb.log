@@ -1,79 +1,85 @@
-2024-07-27 09:35:02 INFO log.py: Yasb - Yet Another Status Bar
-2024-07-27 09:35:03 DEBUG __init__.py: CoInitializeEx(None, 2)
-2024-07-27 09:35:03 DEBUG unknwn.py: Release <POINTER(IMMDeviceEnumerator) ptr=0x1d73c855db0 at 1d73dbfe250>
-2024-07-27 09:35:03 DEBUG win32.py: Looking up time zone info from registry
-2024-07-27 09:35:04 INFO weather.py: Fetched new weather data at 2024-07-27 09:35:04.604392
-2024-07-27 09:35:05 INFO weather.py: Fetched new weather data at 2024-07-27 09:35:05.506897
-2024-07-27 09:35:05 INFO bar_manager.py: Starting KomorebiEventListener...
-2024-07-27 09:35:05 INFO bar_manager.py: Starting SystemEventListener...
-2024-07-27 09:35:05 INFO event_listener.py: Created named pipe yasb-be165206-4bea-11ef-9a83-bc091b0e5cee
-2024-07-27 09:35:05 INFO event_listener.py: Waiting for Komorebi to subscribe to named pipe yasb-be165206-4bea-11ef-9a83-bc091b0e5cee
-2024-07-27 09:35:05 INFO watcher.py: Created file watcher for path C:\Users\eivin\.config\yasb
-2024-07-27 09:35:05 INFO event_listener.py: Komorebi connected to named pipe: yasb-be165206-4bea-11ef-9a83-bc091b0e5cee
-2024-07-27 09:35:06 INFO weather.py: Fetched new weather data at 2024-07-27 09:35:06.058556
-2024-07-27 10:05:04 INFO weather.py: Fetched new weather data at 2024-07-27 10:05:04.358832
-2024-07-27 10:05:05 INFO weather.py: Fetched new weather data at 2024-07-27 10:05:05.462412
-2024-07-27 10:05:05 INFO weather.py: Fetched new weather data at 2024-07-27 10:05:05.531693
-2024-07-27 10:35:04 INFO weather.py: Fetched new weather data at 2024-07-27 10:35:04.209698
-2024-07-27 10:35:05 INFO weather.py: Fetched new weather data at 2024-07-27 10:35:05.555068
-2024-07-27 10:35:05 INFO weather.py: Fetched new weather data at 2024-07-27 10:35:05.646699
-2024-07-27 11:05:04 INFO weather.py: Fetched new weather data at 2024-07-27 11:05:04.165067
-2024-07-27 11:05:05 INFO weather.py: Fetched new weather data at 2024-07-27 11:05:05.629808
-2024-07-27 11:05:05 INFO weather.py: Fetched new weather data at 2024-07-27 11:05:05.675319
-2024-07-27 11:35:04 INFO weather.py: Fetched new weather data at 2024-07-27 11:35:04.628419
-2024-07-27 11:35:05 INFO weather.py: Fetched new weather data at 2024-07-27 11:35:05.470387
-2024-07-27 11:35:05 INFO weather.py: Fetched new weather data at 2024-07-27 11:35:05.526406
-2024-07-27 12:05:03 INFO weather.py: Fetched new weather data at 2024-07-27 12:05:03.897014
-2024-07-27 12:05:05 INFO weather.py: Fetched new weather data at 2024-07-27 12:05:05.445833
-2024-07-27 12:05:05 INFO weather.py: Fetched new weather data at 2024-07-27 12:05:05.512521
-2024-07-27 12:35:03 INFO weather.py: Fetched new weather data at 2024-07-27 12:35:03.996341
-2024-07-27 12:35:05 INFO weather.py: Fetched new weather data at 2024-07-27 12:35:05.481930
-2024-07-27 12:35:05 INFO weather.py: Fetched new weather data at 2024-07-27 12:35:05.528974
-2024-07-27 13:05:04 INFO weather.py: Fetched new weather data at 2024-07-27 13:05:04.072154
-2024-07-27 13:05:05 INFO weather.py: Fetched new weather data at 2024-07-27 13:05:05.452391
-2024-07-27 13:05:05 INFO weather.py: Fetched new weather data at 2024-07-27 13:05:05.539884
-2024-07-27 13:35:03 INFO weather.py: Fetched new weather data at 2024-07-27 13:35:03.731874
-2024-07-27 13:35:05 INFO weather.py: Fetched new weather data at 2024-07-27 13:35:05.445424
-2024-07-27 13:35:05 INFO weather.py: Fetched new weather data at 2024-07-27 13:35:05.510224
-2024-07-27 14:05:03 INFO weather.py: Fetched new weather data at 2024-07-27 14:05:03.830103
-2024-07-27 14:05:05 INFO weather.py: Fetched new weather data at 2024-07-27 14:05:05.609701
-2024-07-27 14:05:05 INFO weather.py: Fetched new weather data at 2024-07-27 14:05:05.656288
-2024-07-27 14:35:05 INFO weather.py: Fetched new weather data at 2024-07-27 14:35:05.659879
-2024-07-27 14:35:06 INFO weather.py: Fetched new weather data at 2024-07-27 14:35:06.185621
-2024-07-27 14:35:06 INFO weather.py: Fetched new weather data at 2024-07-27 14:35:06.318155
-2024-07-27 15:05:03 INFO weather.py: Fetched new weather data at 2024-07-27 15:05:03.949309
-2024-07-27 15:05:05 INFO weather.py: Fetched new weather data at 2024-07-27 15:05:05.463814
-2024-07-27 15:05:05 INFO weather.py: Fetched new weather data at 2024-07-27 15:05:05.521330
-2024-07-27 15:35:03 INFO weather.py: Fetched new weather data at 2024-07-27 15:35:03.766517
-2024-07-27 15:35:05 INFO weather.py: Fetched new weather data at 2024-07-27 15:35:05.470414
-2024-07-27 15:35:05 INFO weather.py: Fetched new weather data at 2024-07-27 15:35:05.567937
-2024-07-27 16:05:03 INFO weather.py: Fetched new weather data at 2024-07-27 16:05:03.886191
-2024-07-27 16:05:05 INFO weather.py: Fetched new weather data at 2024-07-27 16:05:05.474864
-2024-07-27 16:05:05 INFO weather.py: Fetched new weather data at 2024-07-27 16:05:05.519930
-2024-07-27 16:35:03 INFO weather.py: Fetched new weather data at 2024-07-27 16:35:03.815307
-2024-07-27 16:35:05 INFO weather.py: Fetched new weather data at 2024-07-27 16:35:05.472087
-2024-07-27 16:35:05 INFO weather.py: Fetched new weather data at 2024-07-27 16:35:05.532656
-2024-07-27 17:05:04 INFO weather.py: Fetched new weather data at 2024-07-27 17:05:04.001983
-2024-07-27 17:05:05 INFO weather.py: Fetched new weather data at 2024-07-27 17:05:05.469813
-2024-07-27 17:05:05 INFO weather.py: Fetched new weather data at 2024-07-27 17:05:05.533851
-2024-07-27 17:35:04 INFO weather.py: Fetched new weather data at 2024-07-27 17:35:04.121019
-2024-07-27 17:35:05 INFO weather.py: Fetched new weather data at 2024-07-27 17:35:05.451000
-2024-07-27 17:35:05 INFO weather.py: Fetched new weather data at 2024-07-27 17:35:05.512167
-2024-07-27 18:05:03 INFO weather.py: Fetched new weather data at 2024-07-27 18:05:03.981412
-2024-07-27 18:05:05 INFO weather.py: Fetched new weather data at 2024-07-27 18:05:05.464407
-2024-07-27 18:05:05 INFO weather.py: Fetched new weather data at 2024-07-27 18:05:05.522079
-2024-07-27 18:35:04 INFO weather.py: Fetched new weather data at 2024-07-27 18:35:04.821281
-2024-07-27 18:35:05 INFO weather.py: Fetched new weather data at 2024-07-27 18:35:05.562633
-2024-07-27 18:35:05 INFO weather.py: Fetched new weather data at 2024-07-27 18:35:05.601905
-2024-07-27 19:05:03 INFO weather.py: Fetched new weather data at 2024-07-27 19:05:03.668373
-2024-07-27 19:05:05 INFO weather.py: Fetched new weather data at 2024-07-27 19:05:05.510522
-2024-07-27 19:05:05 INFO weather.py: Fetched new weather data at 2024-07-27 19:05:05.569304
-2024-07-27 19:35:04 INFO weather.py: Fetched new weather data at 2024-07-27 19:35:04.198428
-2024-07-27 19:35:05 INFO weather.py: Fetched new weather data at 2024-07-27 19:35:05.534417
-2024-07-27 19:35:05 INFO weather.py: Fetched new weather data at 2024-07-27 19:35:05.697271
-2024-07-27 20:05:03 INFO weather.py: Fetched new weather data at 2024-07-27 20:05:03.964466
-2024-07-27 20:05:05 INFO weather.py: Fetched new weather data at 2024-07-27 20:05:05.550881
-2024-07-27 20:05:05 INFO weather.py: Fetched new weather data at 2024-07-27 20:05:05.597575
-2024-07-27 20:35:03 INFO weather.py: Fetched new weather data at 2024-07-27 20:35:03.983151
-2024-07-27 20:35:05 INFO weather.py: Fetched new weather data at 2024-07-27 20:35:05.513793
-2024-07-27 20:35:05 INFO weather.py: Fetched new weather data at 2024-07-27 20:35:05.606071
+2024-07-28 11:31:48 INFO log.py: Yasb - Yet Another Status Bar
+2024-07-28 11:31:48 DEBUG __init__.py: CoInitializeEx(None, 2)
+2024-07-28 11:31:49 DEBUG unknwn.py: Release <POINTER(IMMDeviceEnumerator) ptr=0x1b19820ba60 at 1b199406250>
+2024-07-28 11:31:49 DEBUG win32.py: Looking up time zone info from registry
+2024-07-28 11:31:50 INFO weather.py: Fetched new weather data at 2024-07-28 11:31:50.056664
+2024-07-28 11:31:51 INFO weather.py: Fetched new weather data at 2024-07-28 11:31:51.642184
+2024-07-28 11:31:51 INFO bar_manager.py: Starting SystemEventListener...
+2024-07-28 11:31:51 INFO bar_manager.py: Starting KomorebiEventListener...
+2024-07-28 11:31:51 INFO event_listener.py: Created named pipe yasb-3890fe9e-4cc4-11ef-8a5a-bc091b0e5cee
+2024-07-28 11:31:51 INFO event_listener.py: Waiting for Komorebi to subscribe to named pipe yasb-3890fe9e-4cc4-11ef-8a5a-bc091b0e5cee
+2024-07-28 11:31:51 INFO weather.py: Fetched new weather data at 2024-07-28 11:31:51.902042
+2024-07-28 11:31:51 INFO watcher.py: Created file watcher for path C:\Users\eivin\.config\yasb
+2024-07-28 11:31:52 INFO event_listener.py: Komorebi connected to named pipe: yasb-3890fe9e-4cc4-11ef-8a5a-bc091b0e5cee
+2024-07-28 12:01:51 INFO weather.py: Fetched new weather data at 2024-07-28 12:01:51.706064
+2024-07-28 12:01:51 INFO weather.py: Fetched new weather data at 2024-07-28 12:01:51.724217
+2024-07-28 12:01:51 INFO weather.py: Fetched new weather data at 2024-07-28 12:01:51.743833
+2024-07-28 12:31:49 INFO weather.py: Fetched new weather data at 2024-07-28 12:31:49.676900
+2024-07-28 12:31:51 INFO weather.py: Fetched new weather data at 2024-07-28 12:31:51.655801
+2024-07-28 12:31:51 INFO weather.py: Fetched new weather data at 2024-07-28 12:31:51.724991
+2024-07-28 13:01:49 INFO weather.py: Fetched new weather data at 2024-07-28 13:01:49.802757
+2024-07-28 13:01:51 INFO weather.py: Fetched new weather data at 2024-07-28 13:01:51.592098
+2024-07-28 13:01:51 INFO weather.py: Fetched new weather data at 2024-07-28 13:01:51.648632
+2024-07-28 13:31:50 INFO weather.py: Fetched new weather data at 2024-07-28 13:31:50.490638
+2024-07-28 13:31:51 INFO weather.py: Fetched new weather data at 2024-07-28 13:31:51.592279
+2024-07-28 13:31:51 INFO weather.py: Fetched new weather data at 2024-07-28 13:31:51.668926
+2024-07-28 14:01:49 INFO weather.py: Fetched new weather data at 2024-07-28 14:01:49.465433
+2024-07-28 14:01:51 INFO weather.py: Fetched new weather data at 2024-07-28 14:01:51.610214
+2024-07-28 14:01:51 INFO weather.py: Fetched new weather data at 2024-07-28 14:01:51.652477
+2024-07-28 14:31:49 INFO weather.py: Fetched new weather data at 2024-07-28 14:31:49.989795
+2024-07-28 14:31:51 INFO weather.py: Fetched new weather data at 2024-07-28 14:31:51.592596
+2024-07-28 14:31:51 INFO weather.py: Fetched new weather data at 2024-07-28 14:31:51.665436
+2024-07-28 15:01:49 INFO weather.py: Fetched new weather data at 2024-07-28 15:01:49.763126
+2024-07-28 15:01:51 INFO weather.py: Fetched new weather data at 2024-07-28 15:01:51.693960
+2024-07-28 15:01:51 INFO weather.py: Fetched new weather data at 2024-07-28 15:01:51.741954
+2024-07-28 15:31:49 INFO weather.py: Fetched new weather data at 2024-07-28 15:31:49.929607
+2024-07-28 15:31:51 INFO weather.py: Fetched new weather data at 2024-07-28 15:31:51.610223
+2024-07-28 15:31:51 INFO weather.py: Fetched new weather data at 2024-07-28 15:31:51.676508
+2024-07-28 16:01:49 INFO weather.py: Fetched new weather data at 2024-07-28 16:01:49.881024
+2024-07-28 16:01:51 INFO weather.py: Fetched new weather data at 2024-07-28 16:01:51.600060
+2024-07-28 16:01:51 INFO weather.py: Fetched new weather data at 2024-07-28 16:01:51.677924
+2024-07-28 16:31:49 INFO weather.py: Fetched new weather data at 2024-07-28 16:31:49.868726
+2024-07-28 16:31:51 INFO weather.py: Fetched new weather data at 2024-07-28 16:31:51.606111
+2024-07-28 16:31:51 INFO weather.py: Fetched new weather data at 2024-07-28 16:31:51.660134
+2024-07-28 17:01:50 INFO weather.py: Fetched new weather data at 2024-07-28 17:01:50.071204
+2024-07-28 17:01:51 INFO weather.py: Fetched new weather data at 2024-07-28 17:01:51.655927
+2024-07-28 17:01:51 INFO weather.py: Fetched new weather data at 2024-07-28 17:01:51.819166
+2024-07-28 17:31:49 INFO weather.py: Fetched new weather data at 2024-07-28 17:31:49.734738
+2024-07-28 17:31:51 INFO weather.py: Fetched new weather data at 2024-07-28 17:31:51.682174
+2024-07-28 17:31:51 INFO weather.py: Fetched new weather data at 2024-07-28 17:31:51.727519
+2024-07-28 18:01:49 INFO weather.py: Fetched new weather data at 2024-07-28 18:01:49.790305
+2024-07-28 18:01:51 INFO weather.py: Fetched new weather data at 2024-07-28 18:01:51.676574
+2024-07-28 18:01:51 INFO weather.py: Fetched new weather data at 2024-07-28 18:01:51.790523
+2024-07-28 18:31:49 INFO weather.py: Fetched new weather data at 2024-07-28 18:31:49.738847
+2024-07-28 18:31:51 INFO weather.py: Fetched new weather data at 2024-07-28 18:31:51.713620
+2024-07-28 18:31:51 INFO weather.py: Fetched new weather data at 2024-07-28 18:31:51.753641
+2024-07-28 19:01:51 INFO weather.py: Fetched new weather data at 2024-07-28 19:01:51.537651
+2024-07-28 19:01:51 INFO weather.py: Fetched new weather data at 2024-07-28 19:01:51.664509
+2024-07-28 19:01:51 INFO weather.py: Fetched new weather data at 2024-07-28 19:01:51.748343
+2024-07-28 19:31:50 INFO weather.py: Fetched new weather data at 2024-07-28 19:31:50.031023
+2024-07-28 19:31:51 INFO weather.py: Fetched new weather data at 2024-07-28 19:31:51.594732
+2024-07-28 19:31:51 INFO weather.py: Fetched new weather data at 2024-07-28 19:31:51.670896
+2024-07-28 20:01:49 INFO weather.py: Fetched new weather data at 2024-07-28 20:01:49.666957
+2024-07-28 20:01:51 INFO weather.py: Fetched new weather data at 2024-07-28 20:01:51.605626
+2024-07-28 20:01:51 INFO weather.py: Fetched new weather data at 2024-07-28 20:01:51.675098
+2024-07-28 20:31:49 INFO weather.py: Fetched new weather data at 2024-07-28 20:31:49.704179
+2024-07-28 20:31:51 INFO weather.py: Fetched new weather data at 2024-07-28 20:31:51.605536
+2024-07-28 20:31:51 INFO weather.py: Fetched new weather data at 2024-07-28 20:31:51.669200
+2024-07-28 21:01:50 INFO weather.py: Fetched new weather data at 2024-07-28 21:01:50.122446
+2024-07-28 21:01:51 INFO weather.py: Fetched new weather data at 2024-07-28 21:01:51.809600
+2024-07-28 21:01:51 INFO weather.py: Fetched new weather data at 2024-07-28 21:01:51.863268
+2024-07-28 21:31:50 INFO weather.py: Fetched new weather data at 2024-07-28 21:31:50.456132
+2024-07-28 21:31:51 INFO weather.py: Fetched new weather data at 2024-07-28 21:31:51.623655
+2024-07-28 21:31:51 INFO weather.py: Fetched new weather data at 2024-07-28 21:31:51.689884
+2024-07-28 22:01:49 INFO weather.py: Fetched new weather data at 2024-07-28 22:01:49.739675
+2024-07-28 22:01:51 INFO weather.py: Fetched new weather data at 2024-07-28 22:01:51.688154
+2024-07-28 22:01:51 INFO weather.py: Fetched new weather data at 2024-07-28 22:01:51.757980
+2024-07-28 22:31:49 INFO weather.py: Fetched new weather data at 2024-07-28 22:31:49.955853
+2024-07-28 22:31:51 INFO weather.py: Fetched new weather data at 2024-07-28 22:31:51.660585
+2024-07-28 22:31:51 INFO weather.py: Fetched new weather data at 2024-07-28 22:31:51.773362
+2024-07-28 23:01:50 INFO weather.py: Fetched new weather data at 2024-07-28 23:01:50.116661
+2024-07-28 23:01:51 INFO weather.py: Fetched new weather data at 2024-07-28 23:01:51.596153
+2024-07-28 23:01:51 INFO weather.py: Fetched new weather data at 2024-07-28 23:01:51.668606
+2024-07-28 23:31:51 INFO weather.py: Fetched new weather data at 2024-07-28 23:31:51.264694
+2024-07-28 23:31:51 INFO weather.py: Fetched new weather data at 2024-07-28 23:31:51.597697
+2024-07-28 23:31:51 INFO weather.py: Fetched new weather data at 2024-07-28 23:31:51.667003
