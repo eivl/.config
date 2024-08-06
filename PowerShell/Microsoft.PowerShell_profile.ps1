@@ -18,6 +18,11 @@ function restart_tb {
 }
 
 
+function kr {
+    komorebic stop --whkd && komorebic start --whkd
+}
+
+
 Import-Module ZLocation
 Invoke-Expression (& { (zoxide init --cmd cd powershell | Out-String) })
 Invoke-Expression (&starship init powershell)
