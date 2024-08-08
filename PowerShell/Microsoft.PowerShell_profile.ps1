@@ -19,7 +19,11 @@ function restart_tb {
 
 
 function kr {
-    komorebic stop --whkd && komorebic start --whkd
+    if (Get-Process -Name "komorebi" -ErrorAction SilentlyContinue) {
+        komorebic stop --whkd && komorebic start --whkd
+    } else {
+        komorebic start --whkd
+    }
 }
 
 
