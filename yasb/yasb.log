@@ -1,0 +1,13 @@
+2024-08-09 09:48:50 INFO log.py: Yasb - Yet Another Status Bar
+2024-08-09 09:48:50 DEBUG __init__.py: CoInitializeEx(None, 2)
+2024-08-09 09:48:51 DEBUG unknwn.py: Release <POINTER(IMMDeviceEnumerator) ptr=0x1fe53283c10 at 1fe547921d0>
+2024-08-09 09:48:51 DEBUG win32.py: Looking up time zone info from registry
+2024-08-09 09:48:51 INFO weather.py: Fetched new weather data at 2024-08-09 09:48:51.887300
+2024-08-09 09:48:55 INFO weather.py: Fetched new weather data at 2024-08-09 09:48:55.320712
+2024-08-09 09:48:55 INFO bar_manager.py: Starting KomorebiEventListener...
+2024-08-09 09:48:55 INFO bar_manager.py: Starting SystemEventListener...
+2024-08-09 09:48:55 INFO event_listener.py: Created named pipe yasb-d40eb4ac-5623-11ef-9f4d-bc091b0e5cee
+2024-08-09 09:48:55 INFO event_listener.py: Waiting for Komorebi to subscribe to named pipe yasb-d40eb4ac-5623-11ef-9f4d-bc091b0e5cee
+2024-08-09 09:48:55 INFO watcher.py: Created file watcher for path C:\Users\eivin\.config\yasb
+2024-08-09 09:48:55 INFO event_listener.py: Komorebi connected to named pipe: yasb-d40eb4ac-5623-11ef-9f4d-bc091b0e5cee
+2024-08-09 09:48:55 INFO weather.py: Fetched new weather data at 2024-08-09 09:48:55.652441
