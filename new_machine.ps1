@@ -177,7 +177,7 @@ pipx install poetry ruff "black[d]"
 & $env:Temp\GoogleCloudSDKInstaller.exe
 temp_fix_path
 
-
+pip config set global.require-virtualenv True
 
 
 
