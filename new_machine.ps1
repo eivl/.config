@@ -82,6 +82,7 @@ $packages = @(
     'sysinternals/sdelete'
     'touch'
     'tre-command'
+    'ttyd'
     'unzip'
     'wakemeonlan'
     'wget'
