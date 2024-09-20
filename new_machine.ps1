@@ -84,6 +84,7 @@ $packages = @(
     'tre-command'
     'ttyd'
     'unzip'
+    'vhs'
     'wakemeonlan'
     'wget'
     'whkd'
