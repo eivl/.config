@@ -62,6 +62,7 @@ $packages = @(
     'iperf3'
     'JetBrains-Mono'
     'jq'
+    'just'
     'komorebi'
     'kubectl'
     'less'
@@ -71,6 +72,7 @@ $packages = @(
     'ngrok'
     'rclone'
     'ripgrep'
+    'rye'
     'scoop-search'
     'sed'
     'spotify-tui'
@@ -181,7 +183,7 @@ temp_fix_path
 
 pip config set global.require-virtualenv True
 
-
+rye install posting
 
 
 # CHECK IF WSL IS INSTALLED
