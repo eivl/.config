@@ -31,3 +31,4 @@ Set-Item -Path Env:PIP_REQUIRE_VIRTUALENV -Value "true"
 Import-Module ZLocation
 Invoke-Expression (& { (zoxide init --cmd cd powershell | Out-String) })
 Invoke-Expression (&starship init powershell)
+Set-Alias ls -Value eza.exe
