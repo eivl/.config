@@ -65,6 +65,7 @@ $packages = @(
     'just'
     'komorebi'
     'kubectl'
+    'lazygit'
     'less'
     'lf'
     'mediainfo'
