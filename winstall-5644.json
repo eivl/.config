@@ -56,7 +56,7 @@
 	  "Id": "Ollama.Ollama",
         },
         {
-          "Id": "Nvidia.CUDA",
+          "Id": "CharlesMilette.TranslucentTB",
         },
         {
           "Id": "Nvidia.CUDA",
