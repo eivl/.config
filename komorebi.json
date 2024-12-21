@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.25/schema.json",
-  "app_specific_configuration_path": "$Env:USERPROFILE/applications.yaml",
+  "app_specific_configuration_path": "$Env:USERPROFILE/applications.json",
   "window_hiding_behaviour": "Cloak",
   "cross_monitor_move_behaviour": "Insert",
   "default_workspace_padding": 20,
@@ -58,10 +58,40 @@
       ]
     }
   ],
-  "float_rules": [
+  "ignore_rules": [
     {
-      "kind": "Exe",
-      "id": "mpv.exe"
-    }
+      "kind": "Title",
+      "id": "WindowsFormsParkingWindow",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Class",
+      "id": "WindowsForms10.Window",
+      "matching_strategy": "StartsWith"
+    },
+    [
+      {
+        "kind": "Exe",
+        "id": "devenv.exe",
+        "matching_strategy": "Equals"
+      },
+      {
+        "kind": "Title",
+        "id": "Move files to a new location?",
+        "matching_strategy": "Equals"
+      }
+    ],
+    [
+      {
+        "kind": "Exe",
+        "id": "devenv.exe",
+        "matching_strategy": "Equals"
+      },
+      {
+        "kind": "Title",
+        "id": "QuickWatch",
+        "matching_strategy": "Equals"
+      }
+    ]
   ]
 }

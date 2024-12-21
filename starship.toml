@@ -1,5 +1,4 @@
-command_timeout = 5000
-
+# format = '$all$directory$character'
 
 [aws]
 symbol = "  "
@@ -21,6 +20,8 @@ symbol = " "
 
 [directory]
 read_only = " 󰌾"
+# truncation_length = 8
+# truncation_symbol = '…/'
 
 [docker_context]
 symbol = " "
@@ -39,6 +40,9 @@ symbol = " "
 
 [git_branch]
 symbol = " "
+
+[git_commit]
+tag_symbol = '  '
 
 [golang]
 symbol = " "
@@ -155,7 +159,7 @@ symbol = "󰟔 "
 symbol = " "
 
 [rust]
-symbol = " "
+symbol = "󱘗 "
 
 [scala]
 symbol = " "
@@ -166,4 +170,5 @@ symbol = " "
 [zig]
 symbol = " "
 
-
+[gradle]
+symbol = " "
