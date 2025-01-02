@@ -94,6 +94,7 @@ $packages = @(
     'wget'
     'whkd'
     'whois'
+    'yazi'
     'zoxide'
     'pipx'
     'poppler'
