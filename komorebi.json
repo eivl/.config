@@ -61,23 +61,23 @@
   "ignore_rules": [
     {
       "kind": "Title",
-      "id": "WindowsFormsParkingWindow",
+      "id": "Lychee Slicer",
       "matching_strategy": "Equals"
     },
     {
-      "kind": "Class",
-      "id": "WindowsForms10.Window",
-      "matching_strategy": "StartsWith"
+      "kind": "Exe",
+      "id": "LycheeSlicer.exe",
+      "matching_strategy": "Equals"
     },
     [
       {
         "kind": "Exe",
-        "id": "devenv.exe",
+        "id": "LycheeSlicer.exe",
         "matching_strategy": "Equals"
       },
       {
         "kind": "Title",
-        "id": "Move files to a new location?",
+        "id": "Lychee Slicer",
         "matching_strategy": "Equals"
       }
     ],

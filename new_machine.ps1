@@ -59,6 +59,8 @@ $packages = @(
     'git-crypt'
     'glow'
     'grep'
+    'ImageMagick'
+    'ghostscript'
     'iperf3'
     'JetBrains-Mono'
     'jq'
@@ -94,6 +96,8 @@ $packages = @(
     'whois'
     'zoxide'
     'pipx'
+    'poppler'
+    'PSFzf'
     'extras/vcredist2022'
 )
 

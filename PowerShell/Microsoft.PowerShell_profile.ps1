@@ -29,7 +29,12 @@ function kr {
 
 Set-Item -Path Env:PIP_REQUIRE_VIRTUALENV -Value "true"
 Import-Module ZLocation
-Invoke-Expression (& { (zoxide init --cmd cd powershell | Out-String) })
 # Import-Module gsudoModule
 Invoke-Expression (&starship init powershell)
+Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+t' -PSReadlineChordReverseHistory 'Ctrl+r'
+Set-PSReadLineKeyHandler -Key Tab -ScriptBlock { Invoke-FzfTabCompletion }
 Set-Alias ls -Value eza.exe
+$db = New-TemporaryFile
+(Get-ZLocation).GetEnumerator() | ForEach-Object { Write-Output ($_.Name+'|'+$_.Value+'|0') } | Out-File $db
+zoxide import --from=z $db --merge
+Invoke-Expression (& { (zoxide init --cmd cd powershell | Out-String) })
