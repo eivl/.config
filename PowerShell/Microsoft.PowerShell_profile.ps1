@@ -26,6 +26,17 @@ function kr {
     }
 }
 
+function customls {
+    [alias('ls')]
+    param(
+        [Parameter(Mandatory=$false)][string]$Path # path for ls
+    )
+    if(!($Path)){
+      $Path = '.'
+    }
+    eza.exe -lab --group-directories-first --git --icons $Path
+}
+
 
 Set-Item -Path Env:PIP_REQUIRE_VIRTUALENV -Value "true"
 Import-Module ZLocation
@@ -33,7 +44,7 @@ Import-Module ZLocation
 Invoke-Expression (&starship init powershell)
 Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+t' -PSReadlineChordReverseHistory 'Ctrl+r'
 Set-PSReadLineKeyHandler -Key Tab -ScriptBlock { Invoke-FzfTabCompletion }
-Set-Alias ls -Value eza.exe
+# Set-Alias ls -Value eza.exe
 $db = New-TemporaryFile
 (Get-ZLocation).GetEnumerator() | ForEach-Object { Write-Output ($_.Name+'|'+$_.Value+'|0') } | Out-File $db
 zoxide import --from=z $db --merge
